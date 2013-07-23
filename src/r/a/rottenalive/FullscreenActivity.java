@@ -102,14 +102,14 @@ public class FullscreenActivity extends Activity {
 						}
 					}
 				});
-		Button button1 = new Button(null);
+		Button button1 = (Button)findViewById(R.id.button_1);
 		
 		button1.setOnClickListener(new View.OnClickListener() {
 		
 		
 
 		@Override
-		public void onClick(View arg0) {
+		public void onClick(View view){
 			// TODO Auto-generated method stub
 			Intent MenuIntent = new Intent(FullscreenActivity.this, IntroActivity.class);
 		   	startActivity(MenuIntent);
